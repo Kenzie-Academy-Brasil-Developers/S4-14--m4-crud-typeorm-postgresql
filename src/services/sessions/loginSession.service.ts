@@ -12,8 +12,6 @@ const loginSessionService = async ({ email, password }: IUserLogin) => {
     email,
   });
 
-  console.log(findUser);
-
   if (!findUser) {
     throw new Error("Invalid Email or Password");
   }
